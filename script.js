@@ -23,12 +23,16 @@ let listaLivros = [
     "Todas As Cores do Céu - Amita Trasi",
     "Tudo é Rio - Carla Madeira"
   ];
+
+  let linkSkoob = [
+    "https://www.skoob.com.br/livro/11954882ED11909230?privacy-agree=true","https://www.skoob.com.br/e-assim-que-acaba-738219ed740815.html","https://www.skoob.com.br/fique-comigo-790073ed812091.html","https://www.skoob.com.br/gente-ansiosa-11951903ed11944673.html","https://www.skoob.com.br/juntando-os-pedacos-619504ed620156.html","https://www.skoob.com.br/os-dois-morrem-no-final-11957528ed11950118.html","https://www.skoob.com.br/os-sete-maridos-de-evelyn-hugo-866308ed967690.html","https://www.skoob.com.br/toda-a-luz-que-nao-podemos-ver-563432ed565364.html","https://www.skoob.com.br/todas-as-cores-do-ceu-833710ed871248.html","https://www.skoob.com.br/tudo-e-rio-435848ed11802730.html"
+  ];
   
   for (let i = 0; i < listaLivros.length; i++) {
     document.write(
       "<div class='capas'><img src='" +
         listaLivros[i] +
-        "' class='aumentar'></img><div class='overlay'><div class='titulo'>" +
+        "' class='aumentar'></img><div class='overlay'><div class='titulo'>" + "<a href=" + linkSkoob [i] + ">" +
         nomesLivros[i] +
         "</div></div></div>"
     );
